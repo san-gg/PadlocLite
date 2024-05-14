@@ -1,8 +1,8 @@
 # Padloc Lite
 
 This project is forked from original project [PadLoc](https://padloc.app/). It
-is a standalone application which defer from original project client server
-architecture. For more info checkout
+is a standalone application which defer from original project's client server
+host. For more info checkout
 [github.com/padloc/padloc](https://github.com/padloc/padloc).
 
 ## About
