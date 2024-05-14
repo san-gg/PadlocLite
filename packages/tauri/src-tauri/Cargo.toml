@@ -1,0 +1,30 @@
+[package]
+name = "padloc"
+version = "4.2.0"
+description = "Padloc"
+authors = [ "Martin Kleinschrodt <martin@maklesoft.com>" ]
+license = "GPL-3.0"
+repository = "https://github.com/padloc/padloc"
+default-run = "padloc"
+edition = "2021"
+build = "src/build.rs"
+
+[build-dependencies.tauri-build]
+version = "1.2.1"
+features = [ ]
+
+[dependencies.tauri]
+version = "1.2.3"
+features = [ "updater" ]
+
+[features]
+default = [ "custom-protocol" ]
+custom-protocol = [ "tauri/custom-protocol" ]
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = true
+incremental = false
+opt-level = "s"
+strip = true
