@@ -40,9 +40,9 @@ npm start
 The web client is now available at `http://localhost:8080`!
 
 Since, this codebase is a standalone application. Their is no use of hosting
-this web app. It is best suited for building Mobile/Desktop app. So, before
-building and using the application you need to add your own persistence storage
-logic as well as you can change the encryption logic. Checkout
+this web app. It is best suited for building Mobile/Desktop app.
+Before building and using the application you need to add your own persistence storage
+logic as well as you can change the existing encryption logic. Checkout
 [@padloc/web](packages/web) for more info on this.
 
 To build Mobile Apps: -
